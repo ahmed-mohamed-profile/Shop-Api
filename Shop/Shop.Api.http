@@ -1,0 +1,15 @@
+﻿@TestRESTAPI_HostAddress = https://localhost:7207
+
+POST {{TestRESTAPI_HostAddress}}/api/account
+Content-Type: application/json
+
+{
+  //dtoLogin
+}
+
+###
+
+@itemId=0
+GET {{TestRESTAPI_HostAddress}}/api/orders/GetOrderItemById/{itemId:int}?itemId={{itemId}}
+
+###
